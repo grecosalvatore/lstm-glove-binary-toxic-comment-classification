@@ -2,8 +2,9 @@
 
 
 ## Introduction
-
+The task consists of predicting wheater the input comment is Toxic or Clean.
 ## Dataset
+The dataset comes from Kaggle and is an extension of the Civil Comments dataset and it can be download at the following [link](https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification/data).
 ```python
 train = pd.read_csv("train.csv")
 train.shape
