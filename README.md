@@ -8,11 +8,21 @@
 train = pd.read_csv("train.csv")
 train.shape
 ```
-```python
-train.head()
+Output:
 ```
-
-
+(1804874, 45)
+```
+```python
+Y = [1 if x >= 0.5 else 0 for x in train["target"]]
+Y = np.array(Y)
+```
+```python
+df= train[['id','comment_text']]
+df_labeled = df.assign(label = Y) 
+```
+```python
+df_labeled.head()
+```
 |       |id      |comment_text                                      |label|
 | ----- |:------:|:------------------------------------------------:| ---:|
 | 0     | 5967432|amazing this is first time in years i actually... |  0  |
