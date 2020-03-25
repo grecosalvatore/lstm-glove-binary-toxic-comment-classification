@@ -35,7 +35,17 @@ df_labeled.head()
 | 3     | 5094159|it does not matter who wins the leadership of ... |  1  |
 | 4     | 450628 |trash sits on the south bank of the willamette... |  0  |
 
+```python
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
 
+MAX_NB_WORDS = 20000000
+
+tokenizer = Tokenizer(lower=False, filters='',oov_token="<OOV>",num_words = MAX_NB_WORDS)
+tokenizer.fit_on_texts(X)
+
+sequences = tokenizer.texts_to_sequences(X)
+```
 
 ## GloVe
 Load the content of the GloVe file into a dictionary with the **word** as **key** and the **Word Embedding** vector as **value**. Using a pre-trained word embedding allows us to use less data and conseguently reduce the training time. In this case it has been used the GloVe with 840B tokens and an embedding vector dimension of 300.
