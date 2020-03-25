@@ -38,6 +38,7 @@ df_labeled.head()
 
 
 ## Glove
+Load the content of the Glove file into a dictionary with the **word** as **key** and the **Word Embedding** vector as value.
 ```python
 from tqdm import tqdm
 
