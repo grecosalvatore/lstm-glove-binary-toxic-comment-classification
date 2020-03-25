@@ -16,6 +16,14 @@ for line in tqdm(f):
     coef = np.array(value[1:],dtype = 'float32')
     embedding_vector[word] = coef
 ```
+```python
+embedding_matrix = np.zeros((nb_words,300))
+
+for word,i in tqdm(tokenizer.word_index.items()):
+    embedding_value = embedding_vector.get(word)
+    if embedding_value is not None:
+        embedding_matrix[i] = embedding_value
+```
 
 ## Define the model
 ```python
