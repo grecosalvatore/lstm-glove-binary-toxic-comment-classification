@@ -4,6 +4,19 @@
 ## Introduction
 
 
+## Glove
+```python
+from tqdm import tqdm
+
+embedding_vector = {}
+f = open('glove.840B.300d.txt')
+for line in tqdm(f):
+    value = line.split(' ')
+    word = value[0]
+    coef = np.array(value[1:],dtype = 'float32')
+    embedding_vector[word] = coef
+```
+
 ## Define the model
 ```python
 from keras.layers.recurrent import LSTM
