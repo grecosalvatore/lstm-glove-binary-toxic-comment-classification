@@ -29,6 +29,9 @@ model.summary()
 ```
 
 ```
+history = model.fit(X_pad, Y, validation_split=0.2, nb_epoch=5, batch_size=128)
+```
+```
 Train on 275467 samples, validate on 68867 samples
 Epoch 1/5
 275467/275467 [==============================] - 2158s 8ms/step - loss: 0.3569 - accuracy: 0.8428 - val_loss: 0.2810 - val_accuracy: 0.8791
