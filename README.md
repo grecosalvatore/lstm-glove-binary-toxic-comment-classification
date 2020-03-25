@@ -37,8 +37,9 @@ df_labeled.head()
 
 
 
-## Glove
-Load the content of the Glove file into a dictionary with the **word** as **key** and the **Word Embedding** vector as value.
+## GloVe
+Load the content of the GloVe file into a dictionary with the **word** as **key** and the **Word Embedding** vector as **value**. Using a pre-trained word embedding allows us to use less data and conseguently reduce the training time. In this case it has been used the GloVe with 840B tokens and an embedding vector dimension of 300.
+* glove.42B.300d.zip [link](https://nlp.stanford.edu/projects/glove/)
 ```python
 from tqdm import tqdm
 
