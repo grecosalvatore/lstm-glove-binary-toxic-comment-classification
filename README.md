@@ -13,7 +13,7 @@ train = pd.read_csv("train.csv")
 train.shape
 ```
 ```
->(1804874, 45)
+> (1804874, 45)
 ```
 ```python
 Y = [1 if x >= 0.5 else 0 for x in train["target"]]
