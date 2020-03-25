@@ -28,7 +28,7 @@ model.summary()
 
 ```
 
-```
+```python
 history = model.fit(X_pad, Y, validation_split=0.2, nb_epoch=5, batch_size=128)
 ```
 ```
