@@ -3,6 +3,25 @@
 
 ## Introduction
 
+## Dataset
+```python
+train = pd.read_csv("train.csv")
+train.shape
+```
+```python
+train.head()
+```
+
+
+|       |id      |comment_text                                      |label|
+| ----- |:------:|:------------------------------------------------:| ---:|
+| 0     | 5967432|amazing this is first time in years i actually... |  0  |
+| 1     | 5869644|i know more than the generals trust me            |  0  |
+| 2     | 605006 |what is this world coming too how were these t... |  1  |
+| 3     | 5094159|it does not matter who wins the leadership of ... |  1  |
+| 4     | 450628 |trash sits on the south bank of the willamette... |  0  |
+
+
 
 ## Glove
 ```python
