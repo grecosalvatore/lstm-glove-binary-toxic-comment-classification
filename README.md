@@ -15,6 +15,7 @@ train.shape
 ```
 > (1804874, 45)
 ```
+Convert the **target** column from continuous values into **labels** 0 or 1.
 ```python
 Y = [1 if x >= 0.5 else 0 for x in train["target"]]
 Y = np.array(Y)
