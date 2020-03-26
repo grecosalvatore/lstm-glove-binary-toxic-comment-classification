@@ -61,6 +61,7 @@ for line in tqdm(f):
     coef = np.array(value[1:],dtype = 'float32')
     embedding_vector[word] = coef
 ```
+Create the Embedding Matrix by assigning to each distinct tokens founded by the tokenizer, the corresponing embedding vector loaded from GloVe.
 ```python
 embedding_matrix = np.zeros((nb_words,300))
 
