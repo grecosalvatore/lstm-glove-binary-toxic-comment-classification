@@ -72,6 +72,9 @@ for word,i in tqdm(tokenizer.word_index.items()):
 ```
 
 ## Define the model
+The first layer 
+Then follows two Bidirectional LSTM layers with 256 units and a Dense layer with 128 hidden units.
+Exploiting transfer learning it is possible to reduce training time and 
 ```python
 from keras.layers.recurrent import LSTM
 from keras.models import Sequential
