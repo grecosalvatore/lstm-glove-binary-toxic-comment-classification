@@ -1,5 +1,4 @@
-# binary-toxicity-classification
-
+# LSTM training for Toxic Comment classification
 
 ## Introduction
 The task consists of predicting wheater the input comment is Toxic or Clean.
